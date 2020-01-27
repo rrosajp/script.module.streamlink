@@ -1,6 +1,6 @@
 # script.module.streamlink
 
-_Streamlink library packed for Kodi: [Upstream link](https://github.com/streamlink/streamlink)
+Streamlink library packed for Kodi: [Upstream link](https://github.com/streamlink/streamlink)
 
 You can install it from [repository.twilight0.libs](https://github.com/Twilight0/repo.twilight0.libs)
 
@@ -28,7 +28,7 @@ If no plugin for the URL is found, a **NoPluginError** will be raised.
 
 If an error occurs while fetching streams, a **PluginError** will be raised.
 
-### Session based usage, which allows plugin options to be passed
+### Session based usage, which allows plugin options to be passed (advanced)
 
     import streamlink.session
 
@@ -39,7 +39,7 @@ If an error occurs while fetching streams, a **PluginError** will be raised.
             session = streamlink.session.Streamlink()
             plugin = session.resolve_url(url)
             streams = plugin.get_streams()
-            playable_link = streams.[quality].to_url()
+            playable_link = streams[quality].to_url()
 
             return playable_link
 
