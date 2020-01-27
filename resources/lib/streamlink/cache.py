@@ -13,7 +13,7 @@ from time import time, mktime
 # else:
 #     xdg_cache = os.environ.get("XDG_CACHE_HOME", os.path.expanduser("~/.cache"))
 
-xdg_cache = tmp_dir = cache_dir = xbmc.translatePath('special://profile/addon_data/script.module.streamlink.base').encode('utf-8')
+xdg_cache = tmp_dir = cache_dir = xbmc.translatePath('special://profile/addon_data/script.module.streamlink')
 
 
 class Cache(object):

@@ -5,7 +5,7 @@ from ..compat import is_win32, is_py3
 
 import xbmc
 
-xdg_cache = tmp_dir = xbmc.translatePath('special://profile/addon_data/script.module.streamlink.base').encode('utf-8')
+xdg_cache = tmp_dir = xbmc.translatePath('special://profile/addon_data/script.module.streamlink')
 
 
 if is_win32:
